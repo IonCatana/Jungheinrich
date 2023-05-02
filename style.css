@@ -1,0 +1,502 @@
+/* -----------------------------------
+==============================================================================
+	# GENERAL
+==============================================================================
+----------------------------------- */
+:root {
+  --roboto: 'Roboto Slab', serif;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+::-moz-selection {
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+body {
+  position: relative;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1292px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* HEADER */
+body header.egloo {
+  padding-top: 2.25rem;
+  width: 100%;
+}
+
+body header.egloo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body header.egloo .svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body header.egloo .container .logo img {
+  cursor: pointer;
+}
+
+body header.egloo .container .button button {
+  height: 2.5rem;
+  width: 12.18rem;
+  display: flex;
+  font-family: 'Open Sans';
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #3C464B;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+body header.egloo .container .button button a {
+  display: flex;
+  align-items: center;
+}
+
+/* SECTION HERO */
+section#hero .container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+section#hero .container .cont-text {
+  margin-top: 6.25rem;
+  padding-left: 6.87rem;
+}
+
+section#hero .container .cont-text .title h1 {
+  font-style: normal;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  line-height: 1;
+  font-size: 3.75rem;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 1.5rem;
+}
+
+section#hero .container .cont-text .subtitle p {
+  font-style: normal;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 1.55;
+  font-size: 1.12rem;
+  color: #000000;
+  width: 90%;
+  padding-bottom: 2.5rem;
+}
+
+section#hero .container .img {
+  padding-right: 6.87rem;
+  margin-top: 2.12rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+section#hero .container .img img:last-child {
+  align-self: flex-end;
+}
+
+section#hero .container .img img:not(:last-child) {
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+section#hero .container .cont-text .button button {
+  height: 3.5rem;
+  padding: 0 1rem;
+  width: 25.87rem;
+  font-family: 'Open Sans';
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #3C464B;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+section#hero .container .cont-text .button button a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SECTION VIDEO */
+section#video {
+  position: relative;
+}
+
+section#video .bg-logo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+section#video .bg-logo img {
+  width: 100%;
+}
+
+section#video .container .contain {
+  padding-left: 6.87rem;
+  padding-right: 6.87rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+section#video .container .contain .subtitle p {
+
+  padding-bottom: 0.5rem;
+}
+
+.orange-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FBA900;
+}
+
+section#video .container .contain .title h2 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+}
+
+section#video .container .contain .video {
+  margin-bottom: 7.5rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 35rem;
+  width: 100%;
+}
+
+section#video .bg-opacity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+section#video .container .contain .video img {
+  border-radius: 1rem;
+}
+
+/* SECTION EVOLUTION */
+section#evolution .container .contain {
+  padding-left: 6.87rem;
+  padding-right: 6.87rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 6.87rem;
+  margin-bottom: 10rem;
+}
+
+section#evolution .container .contain .buttons .button a img {
+  padding: 1.5rem;
+  background: rgba(60, 70, 75, 0.05);
+  border-radius: 1rem;
+}
+
+section#evolution .container .contain .buttons .button a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section#evolution .container .contain .buttons .button a button {
+  all: unset;
+}
+
+section#evolution .container .contain .buttons {
+  padding-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+section#evolution .container .contain .buttons .button {
+  font-family: 'Open Sans';
+  width: 26.67rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #3C464B;
+  border: 1px solid rgba(60, 70, 75, 0.2);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+}
+
+section#evolution .container .contain .buttons .button.active {
+  /* position: relative; */
+  transform: translateX(1.5rem);
+}
+
+section#evolution .container .contain .cont-text .title h3 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+section#evolution .container .contain .cont-text .orange-text {
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+section#evolution .container .contain .cont-text .description p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rempx;
+  line-height: 1.55;
+  color: #000000;
+}
+
+section#evolution .container .contain .cont-text .description p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* SECTION INPUT CODE */
+section#input-code {
+  margin-bottom: 7.5rem;
+}
+
+section#input-code .container .contain {
+  padding: 3.5rem 6.87rem 4.56rem 6.87rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 3.37rem; */
+  background-color: #3C464B;
+  border-radius: 1rem;
+}
+
+section#input-code .container .contain .column-left {
+  width: 52%;
+}
+
+section#input-code .container .contain .column-left .cont-text .orange-text {
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+section#input-code .container .contain .column-left .cont-text .title h4 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding-bottom: 1.5rem;
+}
+
+section#input-code .container .contain .column-left .cont-text .subtitle p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  color: #FFFFFF;
+}
+
+
+
+section#input-code .container .contain .column-right .text p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.37;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 1rem;
+  width: 76%;
+}
+
+section#input-code .container .contain .column-right {
+  margin-top: 1rem;
+}
+
+section#input-code .container .contain .column-right .input {
+  display: flex;
+  flex-direction: column;
+}
+
+section#input-code .container .contain .column-right .input input {
+  all: unset;
+  padding-bottom: 0.4rem;
+  background: #3C464B;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+  color: white;
+}
+
+section#input-code .container .contain .column-right .input button {
+  all: unset;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  height: 3.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* SECTION COURSE START */
+section#course-start {
+  width: 100%;
+}
+
+section#course-start .container .contain {
+  width: 100%;
+  padding: 0rem 6.87rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#course-start .container .contain .column-left {
+  margin-top: 0.5rem;
+}
+
+section#course-start .container .contain .column-left .img img {
+  border-radius: 1rem;
+}
+
+section#course-start .container .contain .column-right .title h5 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 1.5rem;
+}
+
+section#course-start .container .contain .column-right .subtitle p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 5rem;
+}
+
+section#course-start .container .contain .column-right form .question h6 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.57;
+  text-align: center;
+  color: #3C464B;
+}
