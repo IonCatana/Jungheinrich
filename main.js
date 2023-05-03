@@ -34,4 +34,38 @@ anchorLink.addEventListener('click', () => {
   });
 });
 
+// SECTION: Header Scrolling to the Section Course Start
+const anchorLink_2 = document.querySelector('header.egloo .container .button .anchor-link-2');
+const courseStart = document.querySelector('section#course-start');
+anchorLink_2.addEventListener('click', () => {
+  courseStart.scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+
+// SECTION: Hero Scrolling to the Section  Section Video
+const anchorLink3 = document.querySelector('section#hero .container .cont-text .button .anchor-link3');
+const videoSection = document.querySelector('section#video .container .contain .video');
+anchorLink3.addEventListener('click', () => {
+  videoSection.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+});
+
+
+// SECTION: VIDEO Pop-up Video Watching
+const watchVideo = document.querySelector('section#video .container .contain .video .watch-video');
+const containVideo = document.querySelector('section#video .container .contain .video .contain-video');
+const closeBtn = document.querySelector('section#video .container .contain .video .contain-video .close-button');
+
+watchVideo.addEventListener('click', () => {
+  containVideo.classList.toggle('full-screen');
+});
+
+closeBtn.addEventListener('click', () => {
+  containVideo.classList.remove('full-screen');
+});
+
 
