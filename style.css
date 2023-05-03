@@ -49,6 +49,10 @@ body {
   position: relative;
 }
 
+section {
+  width: 100%;
+}
+
 img {
   object-fit: cover;
 }
@@ -454,7 +458,7 @@ section#evolution .container .contain .cont-text .description p {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.12rempx;
+  font-size: 1.12rem;
   line-height: 1.55;
   color: #000000;
 }
@@ -548,6 +552,7 @@ section#input-code .container .contain .column-right .input button {
   text-transform: uppercase;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  color: #3C464B;
 }
 
 /* SECTION COURSE START */
@@ -678,4 +683,363 @@ footer.egloo .container .avon-logo .anchor-link {
 
 footer.egloo .container .avon-logo .anchor-link:hover {
   transform: translateY(-0.5rem);
+}
+
+
+/* Media query */
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* HEADER */
+  body header.egloo {
+    border-top: 4px solid #FBA900;
+    padding-top: 1.75rem;
+  }
+
+  header.egloo .container .logo {
+    width: 10.18rem;
+  }
+
+  body header.egloo .container .button button span {
+    display: none;
+  }
+
+  body header.egloo .container .button button {
+    font-family: var(--open-sans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-style: normal;
+    padding: 0 0.5rem;
+    border: none;
+  }
+
+  body header.egloo .container .button button a {
+    justify-content: space-between;
+    gap: 1.31rem;
+  }
+
+
+  header.egloo .container .logo img {
+    width: 100%;
+  }
+
+  /* SECTION HERO */
+  section#hero .container .cont-text .title h1 {
+    font-size: 2.25rem;
+    line-height: 1.44;
+  }
+
+  section#hero .container .cont-text {
+    margin-top: 3.5rem;
+    padding-left: 0;
+  }
+
+  section#hero .container .cont-text .subtitle p {
+
+    font-weight: 400;
+    line-height: 1.62;
+    font-size: 1rem;
+    color: #000000;
+    width: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  section#hero .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  section#evolution .container .contain .buttons .button {
+    width: 100%;
+  }
+
+  footer.egloo .container {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section#hero .container .cont-text .button button {
+    height: 3.5rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    font-family: 'Open Sans';
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #3C464B;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  section#hero .container .img img:nth-child(2) {
+    margin: 0 auto;
+    width: 7.18rem;
+  }
+
+  section#evolution .container .contain {
+    flex-direction: column-reverse;
+  }
+
+  section#course-start .container .contain {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  section#hero .container .img {
+    padding-right: 0rem;
+    margin-top: 2.12rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7.5rem;
+  }
+
+  section#course-start .container .contain .column-left .img img {
+    width: 100%
+  }
+
+  section#video .container .contain .video .contain-video {
+    width: 100%;
+    height: 100%;
+  }
+
+  section#video .container .contain .video .contain-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  section#evolution .container .contain .buttons {
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  section#input-code {
+    margin-bottom: 7.5rem;
+  }
+
+  section#input-code .container {
+    margin: 0 0.25rem;
+    padding: 0;
+  }
+
+  section#evolution .container .contain .cont-text .title h3 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding-bottom: 1.5rem;
+  }
+
+  section#evolution .container .contain .cont-text .description p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #000000;
+  }
+
+  section#video .bg-logo {
+    position: absolute;
+    top: 79%;
+    transform: translate(0, -50%);
+    width: 100%;
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  section#video .container .contain .video {
+    margin-bottom: 9.75rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 35rem;
+    width: 100%;
+  }
+
+  section#video .container .contain .video .watch-video {
+    width: 90%;
+  }
+
+  section#video .container .contain .video {
+    height: 24.5rem;
+  }
+
+  section#video .container .contain .title h2 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.57;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  section#evolution .container .contain {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 10rem;
+  }
+
+  section#video .container .contain {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  section#input-code .container .contain {
+    padding: 3.5rem 0.75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 3.37rem; */
+    background-color: #3C464B;
+    border-radius: 1rem;
+  }
+
+  section#input-code .container .contain .column-left .cont-text .title h4 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.57;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-bottom: 1.5rem;
+  }
+
+  section#input-code .container .contain .column-left {
+    width: 100%;
+  }
+
+  section#input-code .container .contain .column-right {
+    margin-top: 0rem;
+  }
+
+  section#input-code .container .contain .column-left .cont-text .subtitle p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.62;
+    color: #FFFFFF;
+    padding-bottom: 2.5rem;
+  }
+
+  section#input-code .container .contain .column-right .text p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.37;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+    width: 76%;
+    padding-bottom: 2.12rem;
+  }
+
+  section#course-start .container .contain .column-left {
+    margin-top: 0rem;
+
+  }
+
+  section#course-start .container .contain {
+    gap: 2.5rem;
+  }
+
+  section#course-start .container .contain .column-right .title h5 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.57;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding-bottom: 1.5rem;
+  }
+
+  section#course-start .container .contain .column-right form .question h6 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.57;
+    text-align: center;
+    color: #3C464B;
+    padding-bottom: 2.62rem;
+  }
+
+  footer.egloo {
+    margin-top: 7.62rem;
+  }
+
+  footer.egloo .container .avon-logo {
+    width: 115px;
+  }
+
+  footer.egloo .container .avon-logo > img {
+    width: 100%
+  }
+
+  footer.egloo .container .logo-footer {
+    order: 1;
+    width: 10.18rem;
+  }
+
+  footer.egloo .container .logo-footer img {
+    width: 100%;
+  }
+
+  footer.egloo .container .copyright {
+    padding-top: 2.5rem;
+    order: 3;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer.egloo .container .avon-logo {
+    order: 2;
+  }
+
+  section#video .container .contain .video .contain-video.full-screen img,
+  section#video .container .contain .video .contain-video.full-screen video {
+    /* padding: 0 1rem; */
+    width: 90%;
+    height: auto;
+  }
 }
